@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="clement.notification.Notification">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notificationframe_iv"
+            android:src="@drawable/notificationframe"
+            android:layout_below="@+id/message1_tv"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="58dp"
+            android:id="@+id/pic_iv"
+            android:src="@drawable/pic"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="98dp"
+            android:layout_below="@+id/message1_tv"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ooo接受了您的申請"
+            android:id="@+id/message1_tv"
+            android:layout_gravity="center_horizontal|top"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp" />
+    </FrameLayout>
+
+</RelativeLayout>
